@@ -1,7 +1,7 @@
 # SQLScript_for_SAP_HANA
 Additional scripts and information about the book SQLScript for SAP HANA. 
 
-## Installation des Demo-Datenmodells
+## Installation of the Demo Data Model
 Hinter den folgenden Links stecken die SQL Skripte, die das Datenmodell anlegen und mit Daten füllen. Bitte kopieren Sie den Inhalt der einzelnen Skripte in die Zwischenablage und öffnen dann eine SQL-Konsole für das Datenbankschema Ihrer Wahl, zum Beispiel das persönliche Schema Ihres Datenbanknutzers. Dort fügen Sie das Skript ein und führen es aus. 
 
 * [Datenbanktabellen anlegen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_01_Create_Tables.sql)
@@ -16,6 +16,6 @@ Sie können die Skript Dateien auch lokal speichern und nach belieben anpassen. 
 [Datenbanktabellen, Prozeduren und Funktionen löschen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/uninstall.sql)
 
 
-## Übersicht über das Datenmodell
+## Overview of the Demo Data Model
 
 ![Übersicht](https://github.com/captainabap/SQLScript_for_SAP_HANA/blob/master/A02_Demo_Datenmodell.png)
