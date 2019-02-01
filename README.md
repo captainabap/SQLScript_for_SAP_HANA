@@ -18,4 +18,4 @@ Sie können die Skript Dateien auch lokal speichern und nach belieben anpassen. 
 
 ## Übersicht über das Datenmodell
 
-![Übersicht](https://github.com/captainabap/Einstieg-in-SQLScript/blob/master/A02_Demo_Datenmodell.png)
+![Übersicht](https://github.com/captainabap/SQLScript_for_SAP_HANA/blob/master/A02_Demo_Datenmodell.png)
