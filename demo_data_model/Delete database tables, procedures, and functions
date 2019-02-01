@@ -1,1 +1,22 @@
-
+--Delete the data model
+drop table users;
+drop table projects;
+drop table tasks;
+drop table status;
+drop table status_text;
+drop table tasks_log;
+drop table dats_date;
+drop table colors;
+drop table sizes;
+drop table team_text;
+drop table error_log;
+drop procedure statustexts;
+drop function udf_statustexts;
+drop function udf_tasks_in_status;
+drop function udf_username;
+drop function udf_int_min;
+drop function udf_int_max;
+drop function udf_name;
+drop function udf_tage;
+drop procedure write_error_log;
+drop procedure show_error_log;
