@@ -2,18 +2,18 @@
 Additional scripts and information about the book SQLScript for SAP HANA. 
 
 ## Installation of the Demo Data Model
-Hinter den folgenden Links stecken die SQL Skripte, die das Datenmodell anlegen und mit Daten füllen. Bitte kopieren Sie den Inhalt der einzelnen Skripte in die Zwischenablage und öffnen dann eine SQL-Konsole für das Datenbankschema Ihrer Wahl, zum Beispiel das persönliche Schema Ihres Datenbanknutzers. Dort fügen Sie das Skript ein und führen es aus. 
+Behind the following links are the SQL scripts that create the data model and fill it with data. Please copy the contents of the individual scripts to the clipboard and then open an SQL console for the database schema of your choice, for example the personal schema of your database user. There you insert the script and execute it.
 
-* [Datenbanktabellen anlegen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_01_Create_Tables.sql)
-* [Prozeduren und Funktionen anlegen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_02_Create_Procedures_and_Functions.sql)
-* [Datenbanktabellen füllen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_03_Fill_with_Data.sql)
-* [Installation überprüfen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_04_Check_Install_Result.sql)
+* [Creating Database Tables](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_01_Create_Tables.sql)
+* [Creating Procedures and Functions](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_02_Create_Procedures_and_Functions.sql)
+* [Filling Database Tables](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_03_Fill_with_Data.sql)
+* [Check installation](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/Install_04_Check_Install_Result.sql)
 
-Nach jedem Skript bitte in der Konsolenausgabe prüfen, ob alles ohne Fehler durchgelaufen ist. Das letzte Skript fragt die Anzahl der Zeilen in den jeweiligen Tabellen ab. Damit können Sie prüfen, ob die Daten korrekt geladen wurden. 
+After each script, please check in the console output whether everything ran without errors. The last script queries the number of lines in the respective tables. This allows you to check whether the data was loaded correctly.
 
-Sie können die Skript Dateien auch lokal speichern und nach belieben anpassen. Wenn Ihnen beispielsweise die Testdaten zu viele sind, können Sie das entsprechende Skript einfach anpassen. Um die angelegten Datenbankobjekte wieder zu Löschen, gibt es auch ein passendes Skript:
+You can also save the script files locally and customize them as you like. If, for example, the test data is too much for you, you can simply adapt the corresponding script. To delete the created database objects, there is also a suitable script:
 
-[Datenbanktabellen, Prozeduren und Funktionen löschen](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/uninstall.sql)
+[Deleting Database Tables, Procedures, and Functions](https://raw.githubusercontent.com/captainabap/Einstieg-in-SQLScript/master/Install/uninstall.sql)
 
 
 ## Overview of the Demo Data Model
