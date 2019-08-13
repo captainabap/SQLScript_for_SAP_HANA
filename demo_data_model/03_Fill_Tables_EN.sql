@@ -1,4 +1,4 @@
-
+do begin
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (1, 4, 'ultrices posuere cubilia', 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus', 27, 5, 4, '2017-04-11', 100, 5);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (2, 3, 'et ultrices posuere', 'quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo', 6, 13, 7, '2017-10-27', 72, 2);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (3, 2, 'sollicitudin ut suscipit', 'ac consequat metus sapien ut nunc vestibulum ante ipsum primis', 5, 11, 0, '2017-07-06', 0, 6);
@@ -482,6 +482,9 @@ insert into tasks (id, project, title, description, assignee, planned_effort, ef
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (481, 5, 'iaculis congue vivamus', 'penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien', 6, 12, 9, '2017-07-23', 54, 2);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (482, 2, 'orci nullam molestie', 'in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis', 8, 3, 2, '2017-01-30', 71, 2);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (483, 3, 'pede ullamcorper augue', 'nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem', 21, 17, 12, '2017-07-20', 91, 4);
+end;
+
+do begin
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (484, 3, 'vestibulum sed magna', 'pellentesque quisque porta volutpat erat quisque erat eros viverra eget', 26, 15, 2, '2017-04-01', 9, 4);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (485, 3, 'sed tincidunt eu', 'ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu', 24, 19, 10, '2017-08-24', 37, 3);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (486, 1, 'dapibus augue vel', 'nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec', 7, 7, 2, '2017-05-08', 32, 2);
@@ -1078,7 +1081,7 @@ insert into users (id, firstname, lastname, email, sex, team) values (28, 'Bearn
 insert into users (id, firstname, lastname, email, sex, team) values (29, 'Hubey', 'Densie', 'hdensies@slashdot.org','M', 5);
 insert into users (id, firstname, lastname, email, sex, team) values (30, 'Ozzy', 'Rickell', 'orickellt@sina.com.cn','M', 4);
 
-
+end;
 
 DO BEGIN
 	DECLARE i INT;
