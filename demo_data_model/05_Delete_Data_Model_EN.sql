@@ -21,3 +21,4 @@ drop function udf_tage;
 drop procedure write_error_log;
 drop procedure show_error_log;
 drop procedure close_tasks;
+drop type id_text;
