@@ -482,4 +482,4 @@ insert into tasks (id, project, title, description, assignee, planned_effort, ef
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (481, 5, 'iaculis congue vivamus', 'penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien', 6, 12, 9, '2017-07-23', 54, 2);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (482, 2, 'orci nullam molestie', 'in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis', 8, 3, 2, '2017-01-30', 71, 2);
 insert into tasks (id, project, title, description, assignee, planned_effort, effort, due_date, completed, status) values (483, 3, 'pede ullamcorper augue', 'nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem', 21, 17, 12, '2017-07-20', 91, 4);
-end;
+end; 
