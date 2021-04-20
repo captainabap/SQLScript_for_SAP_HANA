@@ -1,5 +1,5 @@
 # SQLScript_for_SAP_HANA
-Additional scripts and information about the **english** edition of the book SQLScript for SAP HANA. Please note that the German edition of the book has a slightly different demo data model. The scripts are not compatible, because the names of the tables, functions and procedures are different. 
+Additional scripts and information about the **english** edition of the book [SQLScript](https://www.brandeis.de/en/category/sqlscript) for SAP HANA. Please note that the German edition of the book has a slightly different demo data model. The scripts are not compatible, because the names of the tables, functions and procedures are different. 
 
 ## Installation of the Demo Data Model
 Behind the following links are the SQL scripts that create the data model and fill it with data. Please copy the contents of the individual scripts to the clipboard and then open an SQL console for the database schema of your choice, for example the personal schema of your database user. There you insert the script and execute it.
