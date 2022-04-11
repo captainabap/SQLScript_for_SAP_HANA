@@ -7,7 +7,7 @@ UNION
 UNION
   select count(*) as cnt, 'status' as tab from  status           --shoud be 6
 UNION
-select count(*) as cnt, 'status_text' as tab from  status_text   --should be 12
+select count(*) as cnt, 'status_text' as tab from  status_text   --should be 11
 UNION
 select count(*) as cnt, 'team_text' as tab from  team_text       --should be 14
 UNION
