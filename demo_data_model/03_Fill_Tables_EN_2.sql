@@ -576,24 +576,24 @@ insert into users (id, firstname, lastname, email, sex, team) values (9, 'Agnese
 insert into users (id, firstname, lastname, email, sex, team) values (10, 'Doralin', 'Fernley', 'dFernley9@state.tx.us','F', 1);
 insert into users (id, firstname, lastname, email, sex, team) values (11, 'clemens', 'gives', 'cgivesa@cbsnews.com','M', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (12, 'Giacobo', 'Kolinsky', 'gKolinskyb@simplemachines.org','M', 3);
-insert into users (id, firstname, lastname, email, sex, team) values (13, 'Joanna', 'Burchell', 'jburchellc@prweb.com','F', 1);
+insert into users (id, firstname, lastname, email, sex, team) values (13, 'Joanna', 'Burchell', 'jburchellc@prweb.com ','F', 1);
 insert into users (id, firstname, lastname, email, sex, team) values (14, 'Ashlin', 'Timberlake', 'atimberlaked@businessinsider.com','F', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (15, 'Tamiko', 'Speeding', 'tspeedinge@e-recht24.de','F', 7);
 insert into users (id, firstname, lastname, email, sex, team) values (16, 'Brandise', 'Cattell', 'bcattellf@hp.com','F', 1);
 insert into users (id, firstname, lastname, email, sex, team) values (17, 'Zorine', 'Coaten', 'zcoateng@java.com','F', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (18, 'Suzann', 'Bellenie', 'sbellenieh@nymag.com','F', 4);
 insert into users (id, firstname, lastname, email, sex, team) values (19, 'Lorry', 'adger', 'ladgeri@mapy.cz','F', 4);
-insert into users (id, firstname, lastname, email, sex, team) values (20, 'Micky', 'Benzi', 'mbenzij@quantcast.com','M', 1);
+insert into users (id, firstname, lastname, email, sex, team) values (20, 'Micky', 'Benzi', 'mbenzij@quantcast.com ','M', 1);
 insert into users (id, firstname, lastname, email, sex, team) values (21, 'Darby', 'Vassay', 'dvassayk@homestead.com','M', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (22, 'Carol Jean', 'Jeppen Sen', 'cjeppensenl@scientificamerican.com','F', 2);
 insert into users (id, firstname, lastname, email, sex, team) values (23, 'Troy', 'Fontaine', 'tfontainem@apache.org','M', 2);
-insert into users (id, firstname, lastname, email, sex, team) values (24, 'Eal', 'Beche', 'ebechen@alexa.com','M', 3);
+insert into users (id, firstname, lastname, email, sex, team) values (24, 'Eal', 'Beche', 'ebechen@alexa.com  ','M', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (25, 'Ferdy', 'Duester', 'fduestero@miitbeian.gov.cn','M', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (26, 'Luce', 'Upton', 'LuceUpton@jalbum.net','M', 4);
 insert into users (id, firstname, lastname, email, sex, team) values (27, 'Uriel', 'Shoebottom', 'Uriel.Shoebottomq@google.ca','F', 3);
 insert into users (id, firstname, lastname, email, sex, team) values (28, 'Bearnard', 'Stilwell', 'bstilwellr@last.fm','M',2);
 insert into users (id, firstname, lastname, email, sex, team) values (29, 'Hubey', 'Densie', 'hdensies@slashdot.org','M', 5);
-insert into users (id, firstname, lastname, email, sex, team) values (30, 'Ozzy', 'Rickell', 'orickellt@sina.com.cn','M', 4);
+insert into users (id, firstname, lastname, email, sex, team) values (30, 'Ozzy', 'Rickell', 'orickellt@sina.com.cn ','M', 4);
 
 end;
 
