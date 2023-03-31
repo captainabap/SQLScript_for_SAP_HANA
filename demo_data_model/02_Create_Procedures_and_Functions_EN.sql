@@ -4,7 +4,7 @@ CREATE PROCEDURE statustexts(
 		IN iv_langu VARCHAR(2), 
 		OUT et_result TABLE (
 			id INT,
-			status_text NVARCHAR(20)
+			status_text NVARCHAR(100)
 		)
 	)
 AS
