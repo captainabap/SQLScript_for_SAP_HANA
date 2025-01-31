@@ -108,6 +108,20 @@ CREATE COLUMN TABLE "PCA_PLAN"(
 ) COLUMN LOADABLE
 UNLOAD PRIORITY 5 AUTO MERGE;
 
+CREATE COLUMN TABLE "RECORDS"(
+	"BUDAT" NVARCHAR(8) DEFAULT '00000000' NOT NULL,
+	"VALTYPE" NVARCHAR(2) DEFAULT '' NOT NULL,
+	"ACCOUNT" NVARCHAR(6) DEFAULT '' NOT NULL,
+	"AMOUNT" DECIMAL(17, 2) DEFAULT 0 NOT NULL,
+	"CURR" NVARCHAR(5) DEFAULT '' NOT NULL,
+	CONSTRAINT "RECORDS~0" PRIMARY KEY INVERTED INDIVIDUAL(
+		"BUDAT",
+		"VALTYPE",
+		"ACCOUNT"
+	)
+) COLUMN LOADABLE
+UNLOAD PRIORITY 5 AUTO MERGE;
+
 do begin 
     declare la_nr varchar(2) array = array( '01', '02', '03', '04', '05', '07', '08', '10', '20',  '40', '50', '60', '70', '90');
 
@@ -150,9 +164,28 @@ do begin
                         select year(add_years(current_date, -3)) as fiscyear, 1.2 as factor from dummy  ) as y
 
            ) );
-           
+ 
+    lt_valtype = select '10' as valtype from dummy union
+                 select '20' as valtype from dummy union
+                 select '30' as valtype from dummy;
+
+    tr_data =   select  to_dats(d.generated_period_start) as budat,
+                                           v.valtype ,
+                                           a.account,
+                                           rand( ) * 100000 as amount ,
+                                           'EUR' as currency
+    from :accounts as a
+    cross join :lt_valtype as v
+    cross join
+    public.SERIES_GENERATE_DATE( INCREMENT_BY => 'INTERVAL 1 DAY',
+                          MIN_VALUE =>add_days(current_date, -365) ,
+                          MAX_VALUE =>current_date ) as d
+
+     ;          
   select * from :compcodes;
   select * from :accounts;
-  select * from :plan;
+  select * from :tr_data;
+  insert into records (select * from :tr_data);
+  insert into pca_plan  (select * from :plan);
   end;
 
