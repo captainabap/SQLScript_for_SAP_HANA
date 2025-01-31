@@ -81,3 +81,51 @@ INSERT INTO Countries (COUNTRY, TEXT) VALUES ('JM', 'Jamaica');
 INSERT INTO Countries (COUNTRY, TEXT) VALUES ('JP', 'Japan');
 INSERT INTO Countries (COUNTRY, TEXT) VALUES ('JO', 'Jordan');
 
+do begin 
+    declare la_nr varchar(2) array = array( '01', '02', '03', '04', '05', '07', '08', '10', '20',  '40', '50', '60', '70', '90');
+
+    lt_NR = unnest( :la_nr ) as ( nr );
+    accounts = select nr1.nr||nr2.nr||nr3.nr as account,
+                      lpad(ceil(rand()*5)*10, 4, '0') as acctyp
+                           from :lt_nr as nr1
+                           cross join :lt_nr as nr2
+                           cross join :lt_nr as nr3 ;
+                           
+  compcodes = select country||'01'as compcode from countries union all
+              select country||'02'as compcode from countries union all
+              select country||'03'as compcode from countries ;
+  
+    plan = ( select *,
+           (1 + rand( ) * 0.4) * amount_01 as amount_02,
+           (1 + rand( ) * 0.4) * amount_01 as amount_03,
+           (1 + rand( ) * 0.4) * amount_01 as amount_04,
+           (1 + rand( ) * 0.4) * amount_01 as amount_05,
+           (1 + rand( ) * 0.4) * amount_01 as amount_06,
+           (1 + rand( ) * 0.4) * amount_01 as amount_07,
+           (1 + rand( ) * 0.4) * amount_01 as amount_08,
+           (1 + rand( ) * 0.4) * amount_01 as amount_09,
+           (1 + rand( ) * 0.4) * amount_01 as amount_10,
+           (1 + rand( ) * 0.4) * amount_01 as amount_11,
+           (1 + rand( ) * 0.4) * amount_01 as amount_12
+           from (
+           
+           	
+    select o.compcode,
+           a.account,
+           'EUR' as curr,
+           y.fiscyear,
+           y.factor * (1+ rand( )*0.4) * a.factor * o.factor * 1000000 as amount_01
+           from (select compcode, rand( ) as factor  from :compcodes) as o
+           cross join (select account, rand() as factor  from :accounts ) as a
+           cross join ( select year(add_years(current_date, 0)) as fiscyear, 1.1 as factor from dummy union
+                        select year(add_years(current_date, -1)) as fiscyear, 1.2 as factor from dummy union
+                        select year(add_years(current_date, -2)) as fiscyear, 1.2 as factor from dummy union
+                        select year(add_years(current_date, -3)) as fiscyear, 1.2 as factor from dummy  ) as y
+
+           ) );
+           
+  select * from :compcodes;
+  select * from :accounts;
+  select * from :plan;
+  end
+
